@@ -1,4 +1,11 @@
 # Soft dependencies extracted from modules themselves.
+softdep mtk_afe_external post: mediatek-drm
 softdep softdog pre: mtk_wdt
+softdep clkbuf pre: mt6685-core
+softdep clkbuf pre: mt6687-core
+softdep clkbuf pre: mt6397
 softdep mt6789_dcm pre:mtk_dcm.ko
 softdep mcd_panel pre: s2dos05-regulator i2c-exynos5
+softdep mtk_dvfsrc post: mtk-dvfsrc-regulator
+softdep mtk_dvfsrc post: mtk-dvfsrc-devfreq
+softdep mtk_dvfsrc post: mtk-emi
